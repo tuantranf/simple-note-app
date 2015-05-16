@@ -10,6 +10,8 @@ import UIKit
 
 class MasterTableViewController: UITableViewController, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate {
 
+    var noteObjects: NSMutableArray! = NSMutableArray()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,7 +36,56 @@ class MasterTableViewController: UITableViewController, PFLogInViewControllerDel
             logInViewController.signUpController = signUpViewController
             
             self.presentViewController(logInViewController, animated: true, completion: nil)
+        } else {
+            self.fetchAllObjectsFromLocalDatastore()
+            self.fetchAllObjects()
         }
+    }
+    
+    func fetchAllObjectsFromLocalDatastore() {
+    
+        if let user = PFUser.currentUser() {
+            var query: PFQuery = PFQuery(className: "Note")
+            query.fromLocalDatastore()
+            query.whereKey("username", equalTo: user.username!)
+            query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+                if (error == nil) {
+                    println("Success fetch data from local datastore. Count: \(objects?.count)")
+                    var temp: NSArray = objects as! NSArray
+                    self.noteObjects = temp.mutableCopy() as! NSMutableArray
+                    self.tableView.reloadData()
+                } else {
+                    println(error!.userInfo)
+                }
+            }
+        }
+    }
+    
+    func fetchAllObjects() {
+        
+        PFObject.unpinAllObjectsInBackgroundWithBlock(nil)
+        var query: PFQuery = PFQuery(className: "Note")
+        if let user = PFUser.currentUser() {
+            query.whereKey("username", equalTo: user.username!)
+            query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+                if (error == nil) {
+                    println("Success fetch data from server. Count: \(objects?.count)")
+                    PFObject.pinAllInBackground(objects, block: { (success, error) -> Void in
+                        if (error == nil) {
+                            println("Success pin all data to local datastore. Success: \(success)")
+                            self.fetchAllObjectsFromLocalDatastore()
+                        } else {
+                            println("Pin Query Result", msg: "\(query.parseClassName) failed")
+                        }
+                    })
+                } else {
+                    println(error!.userInfo)
+                }
+            }
+            
+        }
+
+
     }
     
     func logInViewController(logInController: PFLogInViewController, shouldBeginLogInWithUsername username: String, password: String) -> Bool {
@@ -47,15 +98,11 @@ class MasterTableViewController: UITableViewController, PFLogInViewControllerDel
     }
     
     func logInViewController(logInController: PFLogInViewController, didLogInUser user: PFUser) {
-        
         self.dismissViewControllerAnimated(true, completion: nil)
-        
     }
     
     func logInViewController(logInController: PFLogInViewController, didFailToLogInWithError error: NSError?) {
-        
-        println("Failed to log gin...")
-        
+        println("Failed to log in...")
     }
     
     func signUpViewController(signUpController: PFSignUpViewController, shouldBeginSignUp info: [NSObject : AnyObject]) -> Bool {
@@ -68,18 +115,15 @@ class MasterTableViewController: UITableViewController, PFLogInViewControllerDel
     }
     
     func signUpViewController(signUpController: PFSignUpViewController, didSignUpUser user: PFUser) {
-        
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func signUpViewController(signUpController: PFSignUpViewController, didFailToSignUpWithError error: NSError?) {
-        
         println("Failed to sign up...")
     }
     
     func signUpViewControllerDidCancelSignUp(signUpController: PFSignUpViewController) {
-        
-        println("Canceld to sign up...")
+        println("User dismissed sign up.")
     }
     
     override func didReceiveMemoryWarning() {
@@ -92,25 +136,41 @@ class MasterTableViewController: UITableViewController, PFLogInViewControllerDel
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 0
+        return self.noteObjects.count
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MasterTableViewCell
 
-        // Configure the cell...
+        var object: PFObject = (self.noteObjects.objectAtIndex(indexPath.row) as? PFObject)!
+        cell.masterTitleLabel?.text = object["title"] as? String
+        cell.masterTextLabel?.text = object["text"] as? String
 
         return cell
     }
-    */
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.performSegueWithIdentifier("editNote", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        var upcoming: AddNoteTableViewController = segue.destinationViewController as! AddNoteTableViewController
+        if (segue.identifier == "editNote") {
+            let indexPath = self.tableView.indexPathForSelectedRow()!
+            var object: PFObject = (self.noteObjects.objectAtIndex(indexPath.row) as? PFObject)!
+            upcoming.object = object
+            upcoming.tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

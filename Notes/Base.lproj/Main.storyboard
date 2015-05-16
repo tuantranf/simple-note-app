@@ -122,7 +122,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Note" id="tJ7-qD-eI4">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="RS2-Yu-Xt6"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="RS2-Yu-Xt6">
+                            <connections>
+                                <action selector="saveAction:" destination="nHb-e8-6af" id="NdQ-Ds-DWZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="textField" destination="kaN-xw-NLZ" id="pcG-QP-MDc"/>
