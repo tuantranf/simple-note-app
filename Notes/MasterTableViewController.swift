@@ -48,6 +48,7 @@ class MasterTableViewController: UITableViewController, PFLogInViewControllerDel
             var query: PFQuery = PFQuery(className: "Note")
             query.fromLocalDatastore()
             query.whereKey("username", equalTo: user.username!)
+            query.orderByDescending("updatedAt")
             query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
                 if (error == nil) {
                     println("Success fetch data from local datastore. Count: \(objects?.count)")
@@ -67,6 +68,7 @@ class MasterTableViewController: UITableViewController, PFLogInViewControllerDel
         var query: PFQuery = PFQuery(className: "Note")
         if let user = PFUser.currentUser() {
             query.whereKey("username", equalTo: user.username!)
+            query.orderByDescending("updatedAt")
             query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
                 if (error == nil) {
                     println("Success fetch data from server. Count: \(objects?.count)")

@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D4D625695854A0F705ABD8 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6669CC80B7D98A9F19361EAE /* Validator.swift */; };
+		04439BE38341336EF15F2CEC /* FullNameRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F0576A7C75A46C85F905ED /* FullNameRule.swift */; };
+		0788A76558E0C414FD425975 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09E6BCFECCE6656375F2A07 /* Foundation.framework */; };
+		11F6070F28CDFB3CE718F9DE /* Pods-Notes-SwiftValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C9F3A78308A448436FBA18 /* Pods-Notes-SwiftValidator-dummy.m */; };
+		37A9B4849DE9897DB6A59529 /* MaxLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF9F480167B2E4CAEE6867 /* MaxLengthRule.swift */; };
+		536C96057608DABF956692D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09E6BCFECCE6656375F2A07 /* Foundation.framework */; };
+		53D69C2CB950F45719A1946C /* RequiredRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B30EE3E5CBAB9790BBFBD /* RequiredRule.swift */; };
+		5782BE48CDA5AA89C1A4CFD7 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D239C10FEB3C66866C6A7C /* ValidationError.swift */; };
+		6F6C09483C86550F5EEE0C15 /* Pods-Notes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA94295BB60B091F0605A41 /* Pods-Notes-dummy.m */; };
+		738268A54D566F7A6E78C9C7 /* MinLengthRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F972C44E090822587D219 /* MinLengthRule.swift */; };
+		8524DEC5B71CB136FD7B14CD /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BD428237ACF0BB6CC263CF /* RegexRule.swift */; };
+		9B6E620A6527E114671A4EA2 /* ConfirmRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0103257191AB30E9021E7CE /* ConfirmRule.swift */; };
+		9D6FE44E483454C4EAF228A2 /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2605105F3F72E895BC0738 /* PasswordRule.swift */; };
+		9EE5E5B557C052565E884557 /* EmailRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42524D64EB4DE7150AF47B45 /* EmailRule.swift */; };
+		A35BD3BE86314AB878B3BBE2 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39792CC321714ADD4B726EE /* ValidationRule.swift */; };
+		B3D84242B40FD775DEFE9EF8 /* Pods-Notes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 93B12E6019FEC2C898A0DBFC /* Pods-Notes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6817D03C44B7D56367C0E1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F080B684DD45DE8AF2125 /* ViewController.swift */; };
+		B7F97213E8142DD555A06E9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD2F44DF2E598E87CA6537 /* AppDelegate.swift */; };
+		BD369EFA99DA8F956CAFF59E /* Pods-Notes-SwiftValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C531A4060193628A16B898 /* Pods-Notes-SwiftValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF9B300FE4AA304533995F18 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACC710F1DD902AC0A54FE94 /* Rule.swift */; };
+		BFB5C50B9D78368E889E2283 /* FloatRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286451BA094E01BBA8B6CE0E /* FloatRule.swift */; };
+		E4B321B30468B88C8D8A5C7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 996093EF9AD2E1F6B4DF463E /* UIKit.framework */; };
+		E7EE5C410CC29B77DB225844 /* PhoneNumberRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD390A130509861535DDF92 /* PhoneNumberRule.swift */; };
+		F8D94F411B5826C19BE63CCC /* ZipCodeRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070C5FA1658983F0F67CCC0 /* ZipCodeRule.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C6E9960AD2B32B0D5501293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8C12DE6EFDC23ED160575F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4AF4DDD06DEB39A79040785;
+			remoteInfo = "Pods-Notes-SwiftValidator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0019BF07EDE47AF042C23157 /* Pods-Notes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Notes-acknowledgements.plist"; sourceTree = "<group>"; };
+		05A30E993E5DA1EAD989EB51 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
+		089A2EC4FCDA002041FA78C1 /* Pods-Notes-SwiftValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Notes-SwiftValidator.modulemap"; sourceTree = "<group>"; };
+		0AA2E08DF6DF7F5F35B60BB8 /* Pods-Notes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Notes-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2070C5FA1658983F0F67CCC0 /* ZipCodeRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZipCodeRule.swift; path = Validator/ZipCodeRule.swift; sourceTree = "<group>"; };
+		25F0576A7C75A46C85F905ED /* FullNameRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullNameRule.swift; path = Validator/FullNameRule.swift; sourceTree = "<group>"; };
+		286451BA094E01BBA8B6CE0E /* FloatRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatRule.swift; path = Validator/FloatRule.swift; sourceTree = "<group>"; };
+		31C531A4060193628A16B898 /* Pods-Notes-SwiftValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Notes-SwiftValidator-umbrella.h"; sourceTree = "<group>"; };
+		3E0B30EE3E5CBAB9790BBFBD /* RequiredRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequiredRule.swift; path = Validator/RequiredRule.swift; sourceTree = "<group>"; };
+		42524D64EB4DE7150AF47B45 /* EmailRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmailRule.swift; path = Validator/EmailRule.swift; sourceTree = "<group>"; };
+		4604FBFF0359F0441D0EB4CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D2A998A64F9DD6460D6F4D3 /* SwiftValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F7F972C44E090822587D219 /* MinLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MinLengthRule.swift; path = Validator/MinLengthRule.swift; sourceTree = "<group>"; };
+		5AD390A130509861535DDF92 /* PhoneNumberRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhoneNumberRule.swift; path = Validator/PhoneNumberRule.swift; sourceTree = "<group>"; };
+		6669CC80B7D98A9F19361EAE /* Validator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validator.swift; path = Validator/Validator.swift; sourceTree = "<group>"; };
+		66D239C10FEB3C66866C6A7C /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = Validator/ValidationError.swift; sourceTree = "<group>"; };
+		6EA94295BB60B091F0605A41 /* Pods-Notes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Notes-dummy.m"; sourceTree = "<group>"; };
+		727F080B684DD45DE8AF2125 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Validator/ViewController.swift; sourceTree = "<group>"; };
+		72BD428237ACF0BB6CC263CF /* RegexRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegexRule.swift; path = Validator/RegexRule.swift; sourceTree = "<group>"; };
+		7ACC710F1DD902AC0A54FE94 /* Rule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rule.swift; path = Validator/Rule.swift; sourceTree = "<group>"; };
+		8F74B6DAED5A996CE4DBFC45 /* Pods-Notes-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Notes-environment.h"; sourceTree = "<group>"; };
+		93B12E6019FEC2C898A0DBFC /* Pods-Notes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Notes-umbrella.h"; sourceTree = "<group>"; };
+		996093EF9AD2E1F6B4DF463E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9AC2958F55CF09683EC3DFB0 /* Pods-Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Notes.debug.xcconfig"; sourceTree = "<group>"; };
+		9CFF9F480167B2E4CAEE6867 /* MaxLengthRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaxLengthRule.swift; path = Validator/MaxLengthRule.swift; sourceTree = "<group>"; };
+		A05C7162B97945D8C1236EB0 /* Pods-Notes-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Notes-resources.sh"; sourceTree = "<group>"; };
+		A09E6BCFECCE6656375F2A07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A39792CC321714ADD4B726EE /* ValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationRule.swift; path = Validator/ValidationRule.swift; sourceTree = "<group>"; };
+		A55B1ACE901EC1B0DF834E26 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF89BB36E5110CE1F7949477 /* Pods-Notes-SwiftValidator-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Notes-SwiftValidator-Private.xcconfig"; sourceTree = "<group>"; };
+		CE62096A3871923A6D537C6D /* Pods-Notes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Notes.modulemap"; sourceTree = "<group>"; };
+		D9AD2F44DF2E598E87CA6537 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Validator/AppDelegate.swift; sourceTree = "<group>"; };
+		DD2605105F3F72E895BC0738 /* PasswordRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PasswordRule.swift; path = Validator/PasswordRule.swift; sourceTree = "<group>"; };
+		DDD4203E20379921F44021A7 /* Pods_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0103257191AB30E9021E7CE /* ConfirmRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfirmRule.swift; path = Validator/ConfirmRule.swift; sourceTree = "<group>"; };
+		E876713FE8022FD23939C1F9 /* Pods-Notes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Notes-frameworks.sh"; sourceTree = "<group>"; };
+		F21B5E1EA57308283B876185 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F6C9F3A78308A448436FBA18 /* Pods-Notes-SwiftValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Notes-SwiftValidator-dummy.m"; sourceTree = "<group>"; };
+		F8F6F7134BAD3EE5E8FAD67E /* Pods-Notes-SwiftValidator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Notes-SwiftValidator.xcconfig"; sourceTree = "<group>"; };
+		FA926D4C44BFB408C84A40BA /* Pods-Notes-SwiftValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Notes-SwiftValidator-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		343274C02D9BC91C844FD66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0788A76558E0C414FD425975 /* Foundation.framework in Frameworks */,
+				E4B321B30468B88C8D8A5C7A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F64A757F2C6ECA57B5667E07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				536C96057608DABF956692D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100E207FB066C710AD2C4F4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDD4203E20379921F44021A7 /* Pods_Notes.framework */,
+				4D2A998A64F9DD6460D6F4D3 /* SwiftValidator.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DED75B2FCD278BD3F437DAB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4604FBFF0359F0441D0EB4CF /* Info.plist */,
+				089A2EC4FCDA002041FA78C1 /* Pods-Notes-SwiftValidator.modulemap */,
+				F8F6F7134BAD3EE5E8FAD67E /* Pods-Notes-SwiftValidator.xcconfig */,
+				BF89BB36E5110CE1F7949477 /* Pods-Notes-SwiftValidator-Private.xcconfig */,
+				F6C9F3A78308A448436FBA18 /* Pods-Notes-SwiftValidator-dummy.m */,
+				FA926D4C44BFB408C84A40BA /* Pods-Notes-SwiftValidator-prefix.pch */,
+				31C531A4060193628A16B898 /* Pods-Notes-SwiftValidator-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Notes-SwiftValidator";
+			sourceTree = "<group>";
+		};
+		638E1ED4CA0DE2B2E7FAD9B0 /* Pods-Notes */ = {
+			isa = PBXGroup;
+			children = (
+				A55B1ACE901EC1B0DF834E26 /* Info.plist */,
+				CE62096A3871923A6D537C6D /* Pods-Notes.modulemap */,
+				0AA2E08DF6DF7F5F35B60BB8 /* Pods-Notes-acknowledgements.markdown */,
+				0019BF07EDE47AF042C23157 /* Pods-Notes-acknowledgements.plist */,
+				6EA94295BB60B091F0605A41 /* Pods-Notes-dummy.m */,
+				8F74B6DAED5A996CE4DBFC45 /* Pods-Notes-environment.h */,
+				E876713FE8022FD23939C1F9 /* Pods-Notes-frameworks.sh */,
+				A05C7162B97945D8C1236EB0 /* Pods-Notes-resources.sh */,
+				93B12E6019FEC2C898A0DBFC /* Pods-Notes-umbrella.h */,
+				9AC2958F55CF09683EC3DFB0 /* Pods-Notes.debug.xcconfig */,
+				05A30E993E5DA1EAD989EB51 /* Pods-Notes.release.xcconfig */,
+			);
+			name = "Pods-Notes";
+			path = "Target Support Files/Pods-Notes";
+			sourceTree = "<group>";
+		};
+		A9D10A34412AA10044A72A16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA45725F940FBAFE3C2FB49B /* SwiftValidator */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D6A1445987D298C43D0EED20 = {
+			isa = PBXGroup;
+			children = (
+				F21B5E1EA57308283B876185 /* Podfile */,
+				D7F29177AF67CF7AAC8AD3EF /* Frameworks */,
+				A9D10A34412AA10044A72A16 /* Pods */,
+				100E207FB066C710AD2C4F4A /* Products */,
+				F1F7DD984A6021ABAB4BFB2F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D7F29177AF67CF7AAC8AD3EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE9C9123E52015A5EA466397 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE9C9123E52015A5EA466397 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A09E6BCFECCE6656375F2A07 /* Foundation.framework */,
+				996093EF9AD2E1F6B4DF463E /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F1F7DD984A6021ABAB4BFB2F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				638E1ED4CA0DE2B2E7FAD9B0 /* Pods-Notes */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FA45725F940FBAFE3C2FB49B /* SwiftValidator */ = {
+			isa = PBXGroup;
+			children = (
+				D9AD2F44DF2E598E87CA6537 /* AppDelegate.swift */,
+				E0103257191AB30E9021E7CE /* ConfirmRule.swift */,
+				42524D64EB4DE7150AF47B45 /* EmailRule.swift */,
+				286451BA094E01BBA8B6CE0E /* FloatRule.swift */,
+				25F0576A7C75A46C85F905ED /* FullNameRule.swift */,
+				9CFF9F480167B2E4CAEE6867 /* MaxLengthRule.swift */,
+				4F7F972C44E090822587D219 /* MinLengthRule.swift */,
+				DD2605105F3F72E895BC0738 /* PasswordRule.swift */,
+				5AD390A130509861535DDF92 /* PhoneNumberRule.swift */,
+				72BD428237ACF0BB6CC263CF /* RegexRule.swift */,
+				3E0B30EE3E5CBAB9790BBFBD /* RequiredRule.swift */,
+				7ACC710F1DD902AC0A54FE94 /* Rule.swift */,
+				66D239C10FEB3C66866C6A7C /* ValidationError.swift */,
+				A39792CC321714ADD4B726EE /* ValidationRule.swift */,
+				6669CC80B7D98A9F19361EAE /* Validator.swift */,
+				727F080B684DD45DE8AF2125 /* ViewController.swift */,
+				2070C5FA1658983F0F67CCC0 /* ZipCodeRule.swift */,
+				3DED75B2FCD278BD3F437DAB /* Support Files */,
+			);
+			path = SwiftValidator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		147C296D21B97ECD9B538815 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D84242B40FD775DEFE9EF8 /* Pods-Notes-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26BF5BE739DCEB624EA24FD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD369EFA99DA8F956CAFF59E /* Pods-Notes-SwiftValidator-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		52529C09DD81500223E5B9A8 /* Pods-Notes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BA32E26F137DB22145989DF /* Build configuration list for PBXNativeTarget "Pods-Notes" */;
+			buildPhases = (
+				7126F5AFE81B2FDC1191FDD6 /* Sources */,
+				F64A757F2C6ECA57B5667E07 /* Frameworks */,
+				147C296D21B97ECD9B538815 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05220214C36D098DCF62DD65 /* PBXTargetDependency */,
+			);
+			name = "Pods-Notes";
+			productName = "Pods-Notes";
+			productReference = DDD4203E20379921F44021A7 /* Pods_Notes.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B4AF4DDD06DEB39A79040785 /* Pods-Notes-SwiftValidator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77DAC5889867CD716D5F7E50 /* Build configuration list for PBXNativeTarget "Pods-Notes-SwiftValidator" */;
+			buildPhases = (
+				A5C94FD7B96B21F247CA70AC /* Sources */,
+				343274C02D9BC91C844FD66F /* Frameworks */,
+				26BF5BE739DCEB624EA24FD5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Notes-SwiftValidator";
+			productName = "Pods-Notes-SwiftValidator";
+			productReference = 4D2A998A64F9DD6460D6F4D3 /* SwiftValidator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8C12DE6EFDC23ED160575F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 932D65F1DC9B165DCC373ABF /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D6A1445987D298C43D0EED20;
+			productRefGroup = 100E207FB066C710AD2C4F4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52529C09DD81500223E5B9A8 /* Pods-Notes */,
+				B4AF4DDD06DEB39A79040785 /* Pods-Notes-SwiftValidator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7126F5AFE81B2FDC1191FDD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F6C09483C86550F5EEE0C15 /* Pods-Notes-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C94FD7B96B21F247CA70AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F97213E8142DD555A06E9B /* AppDelegate.swift in Sources */,
+				9B6E620A6527E114671A4EA2 /* ConfirmRule.swift in Sources */,
+				9EE5E5B557C052565E884557 /* EmailRule.swift in Sources */,
+				BFB5C50B9D78368E889E2283 /* FloatRule.swift in Sources */,
+				04439BE38341336EF15F2CEC /* FullNameRule.swift in Sources */,
+				37A9B4849DE9897DB6A59529 /* MaxLengthRule.swift in Sources */,
+				738268A54D566F7A6E78C9C7 /* MinLengthRule.swift in Sources */,
+				9D6FE44E483454C4EAF228A2 /* PasswordRule.swift in Sources */,
+				E7EE5C410CC29B77DB225844 /* PhoneNumberRule.swift in Sources */,
+				11F6070F28CDFB3CE718F9DE /* Pods-Notes-SwiftValidator-dummy.m in Sources */,
+				8524DEC5B71CB136FD7B14CD /* RegexRule.swift in Sources */,
+				53D69C2CB950F45719A1946C /* RequiredRule.swift in Sources */,
+				BF9B300FE4AA304533995F18 /* Rule.swift in Sources */,
+				5782BE48CDA5AA89C1A4CFD7 /* ValidationError.swift in Sources */,
+				A35BD3BE86314AB878B3BBE2 /* ValidationRule.swift in Sources */,
+				01D4D625695854A0F705ABD8 /* Validator.swift in Sources */,
+				B6817D03C44B7D56367C0E1E /* ViewController.swift in Sources */,
+				F8D94F411B5826C19BE63CCC /* ZipCodeRule.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05220214C36D098DCF62DD65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Notes-SwiftValidator";
+			target = B4AF4DDD06DEB39A79040785 /* Pods-Notes-SwiftValidator */;
+			targetProxy = 9C6E9960AD2B32B0D5501293 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5C292CBDD985DA25CB9C7942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC2958F55CF09683EC3DFB0 /* Pods-Notes.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Notes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Notes/Pods-Notes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Notes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90690FB24A3699B331930387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACE87B5C7076AD706CE87364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05A30E993E5DA1EAD989EB51 /* Pods-Notes.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Notes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Notes/Pods-Notes.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Notes;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD244E71338C6963AE7E581F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF89BB36E5110CE1F7949477 /* Pods-Notes-SwiftValidator-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Notes-SwiftValidator/Pods-Notes-SwiftValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Notes-SwiftValidator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Notes-SwiftValidator/Pods-Notes-SwiftValidator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E53E32ECA5FB8F8B017F090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF89BB36E5110CE1F7949477 /* Pods-Notes-SwiftValidator-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Notes-SwiftValidator/Pods-Notes-SwiftValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Notes-SwiftValidator/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Notes-SwiftValidator/Pods-Notes-SwiftValidator.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA05EED5521FE4B5C8B33628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BA32E26F137DB22145989DF /* Build configuration list for PBXNativeTarget "Pods-Notes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C292CBDD985DA25CB9C7942 /* Debug */,
+				ACE87B5C7076AD706CE87364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77DAC5889867CD716D5F7E50 /* Build configuration list for PBXNativeTarget "Pods-Notes-SwiftValidator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E53E32ECA5FB8F8B017F090A /* Debug */,
+				CD244E71338C6963AE7E581F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		932D65F1DC9B165DCC373ABF /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA05EED5521FE4B5C8B33628 /* Debug */,
+				90690FB24A3699B331930387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8C12DE6EFDC23ED160575F5 /* Project object */;
+}
