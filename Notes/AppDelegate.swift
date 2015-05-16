@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Parse.enableLocalDatastore()
+        
+        ParseCrashReporting.enable()
         
         // Initialize Parse.
         Parse.setApplicationId("QxcMNezvrEuTOXlJt0krjNx8JZ1mLfRya35fYlq5",
